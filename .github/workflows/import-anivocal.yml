@@ -1,0 +1,21 @@
+﻿name: Publish AniVocal engine 0.1 (import)
+# Re-publishes the existing, already-pinned AniVocal engine package in this repository.
+# The package bytes are NOT rebuilt: the SHA256 below is the one Sakugaloader pins.
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Download the existing package and verify its checksum
+        run: |
+          curl -fsSL -o AniVocalEngine-Windows.zip https://github.com/wrdflap21-code/sakugloader-updates/releases/download/anivocal-engine-v0.1/AniVocalEngine-Windows.zip
+          echo "b68f5ee4938ae46eaaaa455fbddf88d77e2cc4438945a72dcdb688bae5c63904  AniVocalEngine-Windows.zip" | sha256sum -c -
+      - name: Create the release (refuses to overwrite an existing one)
+        run: |
+          if gh release view anivocal-v0.1 --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then echo "Release anivocal-v0.1 already exists"; exit 1; fi
+          gh release create anivocal-v0.1 --repo "$GITHUB_REPOSITORY" --title "AniVocal Engine 0.1 — first Windows package" --notes "First AniVocal engine package for Sakugaloader (Windows). Installs Python and Demucs on first setup. SHA256: b68f5ee4938ae46eaaaa455fbddf88d77e2cc4438945a72dcdb688bae5c63904" AniVocalEngine-Windows.zip
