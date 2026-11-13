@@ -2,12 +2,13 @@
   "schemaVersion": 1,
   "channel": "stable",
   "published": true,
-  "version": "1.0.1",
-  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.1/Sakugaloader-Installer-v1.0.1.zip",
-  "sha256": "5b106d7bd3ab8a1a05cb4e3b68538118aecb1f0b654a703f495f35b6cb9fd848",
+  "version": "1.0.2",
+  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.2/Sakugaloader-Installer-v1.0.2.zip",
+  "sha256": "2287db1227dc8bc18e376ebed34bfc6d0b1a9692526a1fa4dbcf0dd0ceb120c6",
   "notes": [
-    "Centered Sakugaloader logo in the setup window and in the Setup.exe icon.",
-    "New Open After Effects button: after Sakugaloader is installed you can start the selected After Effects straight from the installer (shown only when the panel is installed).",
-    "The setup window shows a green notice with a Download button when a newer installer is available."
+    "When a newer installer exists, the green notice now has an **Update now** button: it downloads the new installer, checks its SHA256, opens it and closes the old one. No browser needed.",
+    "The update is only ever downloaded from the official release address and is never written over the running installer; it is unpacked under `%LOCALAPPDATA%\\Sakugaloader-Installer`.",
+    "If anything fails (offline, checksum, unexpected package) nothing is changed and the button falls back to opening the download page.",
+    "Centered logo and the Open After Effects button (shown only when Sakugaloader is installed)."
   ]
 }
