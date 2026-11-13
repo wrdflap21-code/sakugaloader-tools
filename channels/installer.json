@@ -2,13 +2,35 @@
   "schemaVersion": 1,
   "channel": "stable",
   "published": true,
-  "version": "1.0.2",
-  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.2/Sakugaloader-Installer-v1.0.2.zip",
-  "sha256": "2287db1227dc8bc18e376ebed34bfc6d0b1a9692526a1fa4dbcf0dd0ceb120c6",
+  "version": "1.0.3",
+  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.3/Sakugaloader-Installer-v1.0.3.zip",
+  "sha256": "d95432ffa29b7bbbfe085b9f4609b441c0a7bd860faaef6dab0b8c06c075e03a",
   "notes": [
-    "When a newer installer exists, the green notice now has an **Update now** button: it downloads the new installer, checks its SHA256, opens it and closes the old one. No browser needed.",
-    "The update is only ever downloaded from the official release address and is never written over the running installer; it is unpacked under `%LOCALAPPDATA%\\Sakugaloader-Installer`.",
-    "If anything fails (offline, checksum, unexpected package) nothing is changed and the button falls back to opening the download page.",
-    "Centered logo and the Open After Effects button (shown only when Sakugaloader is installed)."
+    "A What's new button next to the version (and on the update notice) opens the release notes of the installer, with sections, like an in-app changelog.",
+    "The Panel tab shows the latest published Sakugaloader version next to the installed one, with UP TO DATE or UPDATE AVAILABLE.",
+    "When a newer Sakugaloader exists, the Install button becomes Update Sakugaloader.",
+    "The update notice has a What's new button, so you can read the changes before pressing Update now."
+  ],
+  "summary": "The installer now tells you what changed and which Sakugaloader is the latest.",
+  "sections": [
+    {
+      "title": "What's new panel",
+      "items": [
+        "A What's new button next to the version (and on the update notice) opens the release notes of the installer, with sections, like an in-app changelog."
+      ]
+    },
+    {
+      "title": "Latest Sakugaloader",
+      "items": [
+        "The Panel tab shows the latest published Sakugaloader version next to the installed one, with UP TO DATE or UPDATE AVAILABLE.",
+        "When a newer Sakugaloader exists, the Install button becomes Update Sakugaloader."
+      ]
+    },
+    {
+      "title": "Updates",
+      "items": [
+        "The update notice has a What's new button, so you can read the changes before pressing Update now."
+      ]
+    }
   ]
 }
