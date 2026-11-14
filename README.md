@@ -1,3 +1,10 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner.png">
+    <img src="assets/banner-light.png" alt="SAKUGA loader" width="560">
+  </picture>
+</p>
+
 # Sakugaloader installer and tools
 
 This repository holds the **Sakugaloader Installer** and the optional **tools** the [Sakugaloader](https://github.com/wrdflap21-code/Sakuga-Upadate) After Effects panel can use. The panel itself and its update channel live in [Sakuga-Upadate](https://github.com/wrdflap21-code/Sakuga-Upadate).
