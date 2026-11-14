@@ -2,34 +2,27 @@
   "schemaVersion": 1,
   "channel": "stable",
   "published": true,
-  "version": "1.0.3",
-  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.3/Sakugaloader-Installer-v1.0.3.zip",
-  "sha256": "d95432ffa29b7bbbfe085b9f4609b441c0a7bd860faaef6dab0b8c06c075e03a",
+  "version": "1.0.4",
+  "downloadUrl": "https://github.com/wrdflap21-code/sakugaloader-tools/releases/download/installer-v1.0.4/Sakugaloader-Installer-v1.0.4.zip",
+  "sha256": "d67499a5f23ae5f99903e13ac862622f0698c2135fcf7b5a3748987a9d8320f5",
   "notes": [
-    "A What's new button next to the version (and on the update notice) opens the release notes of the installer, with sections, like an in-app changelog.",
-    "The Panel tab shows the latest published Sakugaloader version next to the installed one, with UP TO DATE or UPDATE AVAILABLE.",
-    "When a newer Sakugaloader exists, the Install button becomes Update Sakugaloader.",
-    "The update notice has a What's new button, so you can read the changes before pressing Update now."
+    "FFmpeg is now installed from a fixed version (9.0.2) and verified against a SHA256 stored in the installer, not one fetched from the download server.",
+    "New installs put tools under your user profile (Sakugaloader\\Tools in Local AppData) instead of the root of drive C. If you already have tools in the old folder they keep being used.",
+    "Everything from 1.0.3: What's new panel, latest Sakugaloader version and one-click Update now."
   ],
-  "summary": "The installer now tells you what changed and which Sakugaloader is the latest.",
+  "summary": "Safer tool downloads and a safer default folder for tools.",
   "sections": [
     {
-      "title": "What's new panel",
+      "title": "Tools",
       "items": [
-        "A What's new button next to the version (and on the update notice) opens the release notes of the installer, with sections, like an in-app changelog."
+        "FFmpeg is now installed from a fixed version (9.0.2) and verified against a SHA256 stored in the installer, not one fetched from the download server.",
+        "New installs put tools under your user profile (Sakugaloader\\Tools in Local AppData) instead of the root of drive C. If you already have tools in the old folder they keep being used."
       ]
     },
     {
-      "title": "Latest Sakugaloader",
+      "title": "Installer",
       "items": [
-        "The Panel tab shows the latest published Sakugaloader version next to the installed one, with UP TO DATE or UPDATE AVAILABLE.",
-        "When a newer Sakugaloader exists, the Install button becomes Update Sakugaloader."
-      ]
-    },
-    {
-      "title": "Updates",
-      "items": [
-        "The update notice has a What's new button, so you can read the changes before pressing Update now."
+        "Everything from 1.0.3: What's new panel, latest Sakugaloader version and one-click Update now."
       ]
     }
   ]
