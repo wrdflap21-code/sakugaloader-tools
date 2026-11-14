@@ -1,11 +1,28 @@
-﻿# Sakugaloader Tools
+<p align="center">
+  <img src="assets/banner.png" alt="Sakugaloader" width="100%">
+</p>
 
-Companion tools used by the [Sakugaloader](https://github.com/wrdflap21-code/sakugloader-updates) After Effects panel. This repository holds **only the tools**; Sakugaloader itself and its updates live in `sakugloader-updates`.
+# Sakugaloader installer and tools
 
-| Tool | What it does | Folder | Release tag |
-|------|--------------|--------|-------------|
-| AniVocal engine | Splits vocals and instrumentals (installs Python + Demucs on first setup) | `anivocal/` | `anivocal-v<version>` |
+This repository holds the **Sakugaloader Installer** and the optional **tools** the [Sakugaloader](https://github.com/wrdflap21-code/Sakuga-Upadate) After Effects panel can use. The panel itself and its update channel live in [Sakuga-Upadate](https://github.com/wrdflap21-code/Sakuga-Upadate).
 
-Each tool gets its own release per version, named `<Tool> <version> — <subtitle>`, with one ZIP asset and its SHA256. Sakugaloader pins the SHA256 of the package it downloads and refuses anything that does not match.
+## Get the installer
 
-FFmpeg and Real-ESRGAN are not mirrored here: Sakugaloader downloads them from their official sources and verifies them.
+Download the latest **`Sakugaloader-Installer-v...zip`** from [Releases](https://github.com/wrdflap21-code/sakugaloader-tools/releases/latest), close After Effects, extract it, and run **`Sakugaloader-Setup.exe`**. It downloads and verifies the latest panel for you. Full instructions, requirements and screenshots: [Sakuga-Upadate](https://github.com/wrdflap21-code/Sakuga-Upadate#install).
+
+The installer tells you when a newer installer exists (green notice) and can update itself with one click. Its release notes are in the **What's new** panel.
+
+## What is here
+
+| Item | What it is | Release tag |
+|------|------------|-------------|
+| Sakugaloader Installer | Windows setup for the panel, with a Tools tab and update notice | `installer-v<version>` |
+| AniVocal engine | Splits vocals and instrumentals (installs Python and Demucs on first setup) | `anivocal-v<version>` |
+
+Each release has one ZIP and its SHA256. The installer and the panel pin the SHA256 of what they download and refuse anything that does not match.
+
+FFmpeg and Real-ESRGAN are **not** mirrored here: Sakugaloader downloads fixed versions from their official sources and verifies them by SHA256.
+
+## License
+
+Free for everyone, and not for sale: see the **Sakugaloader Free Use License** summary in [Sakuga-Upadate](https://github.com/wrdflap21-code/Sakuga-Upadate#license). The full text is in the `LICENSE` file inside every package. Third-party tools keep their own licenses.
